@@ -1,0 +1,175 @@
+@media (max-width: 1120px) {
+  :root {
+    --pad: 80px;
+  }
+
+  .services-grid,
+  .team-grid,
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .logo-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 920px) {
+  .nav-wrap {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 86px;
+    left: 5vw;
+    right: 5vw;
+    background: rgba(17, 17, 17, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1rem;
+    display: grid;
+    gap: 0.8rem;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .nav-menu.open {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 140px 0 140px;
+  }
+
+  .hero-gallery {
+    position: static;
+    margin: 1.5rem auto -6.5rem;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hero-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-gallery {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .mini-card {
+    min-width: 44%;
+    scroll-snap-align: center;
+  }
+
+  .about-grid,
+  .why-grid,
+  .testimonial-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-collage .portrait,
+  .about-collage .travel,
+  .why-media img,
+  .faq-aside img,
+  .testimonial-media img {
+    min-height: 0;
+    height: 420px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 640px) {
+  :root {
+    --pad: 60px;
+  }
+
+  .container {
+    width: min(1280px, 92vw);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn,
+  .newsletter .btn {
+    width: 100%;
+  }
+
+  .services-grid,
+  .portfolio-grid,
+  .team-grid,
+  .blog-grid,
+  .footer-grid,
+  .stats-grid,
+  .logo-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .about-collage {
+    grid-template-columns: 1fr;
+  }
+
+  .about-collage .portrait {
+    margin-top: 0;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dot.active {
+    width: 14px;
+  }
+
+  .mini-card {
+    min-width: 84%;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audio-toggle {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+}

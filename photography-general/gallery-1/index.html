@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Cinematic wedding gallery with a scroll-pinned typography reveal and editorial slideshow."
+  />
+  <title>Gallery 1 | Cinematic Wedding Reveal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main>
+    <section class="gallery-shell" aria-label="Wedding gallery reveal">
+      <div class="gallery-stage">
+        <div class="stage-panel">
+          <header class="topbar" aria-label="Gallery navigation">
+            <nav class="topnav">
+              <a href="/">#SHRINI</a>
+              <a href="/">#SHRINI</a>
+              <a href="/">#SHRINI</a>
+              <a href="/">#SHRINI</a>
+              <a href="/">#SHRINI</a>
+            </nav>
+          </header>
+
+          <div class="intro-copy">
+            <p>Scroll to view</p>
+          </div>
+
+          <div class="word-stage" aria-hidden="true">
+            <h1 class="word-part word-left">WED</h1>
+            <h1 class="word-part word-right">DING</h1>
+          </div>
+
+          <div class="hero-frame" id="portfolio">
+            <div class="hero-media-track">
+              <article class="media-slide is-active" data-index="1">
+                <img src="../images/b-married.jpeg" alt="Bride and groom holding each other during a wedding portrait" />
+                <div class="media-overlay"></div>
+                <div class="story-copy is-visible">
+                  <p class="story-count">01/04</p>
+                  <h2>the<br />marriage</h2>
+                  <p class="story-meta">Rasoi, 2026</p>
+                </div>
+              </article>
+
+              <article class="media-slide" data-index="2">
+                <img src="../images/serv-wedding.JPG" alt="Bride and groom seated together in a formal wedding portrait" />
+                <div class="media-overlay"></div>
+                <div class="story-copy">
+                  <p class="story-count">02/04</p>
+                  <h2>coastal<br />vows</h2>
+                  <p class="story-meta">Surat, 2026</p>
+                </div>
+              </article>
+
+              <article class="media-slide" data-index="3">
+                <img src="../images/ph-wedding.JPG" alt="Bride and groom sharing a confetti celebration" />
+                <div class="media-overlay"></div>
+                <div class="story-copy">
+                  <p class="story-count">03/04</p>
+                  <h2>golden<br />afterglow</h2>
+                  <p class="story-meta">Bhavnagar, 2026</p>
+                </div>
+              </article>
+
+              <article class="media-slide" data-index="4">
+                <img src="../images/ph-party.JPG" alt="Bride and groom celebrating at a party" />
+                <div class="media-overlay"></div>
+                <div class="story-copy">
+                  <p class="story-count">04/04</p>
+                  <h2>party<br />celebration</h2>
+                  <p class="story-meta">Iscon, 2026</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="footer-left">shripal.nextstep@gmail.com</div>
+          <div class="footer-center">Scroll down</div>
+          <div class="footer-right">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
