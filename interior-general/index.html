@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DesignScope is a premium architecture and interior design DesignScope shaping cinematic spaces."
+    />
+    <title>DesignScope | Luxury Architecture Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="nav-utility container">
+        <div class="utility-left" aria-label="Language selector">
+        </div>
+        <a class="brand brand-centered" href="#top" aria-label="DesignScope home">
+          <span class="brand-text">DesignScope</span>
+          <span class="brand-sup">TM</span>
+        </a>
+        <div class="utility-right">
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="desktop-links">
+          <li><a href="#highlight" class="nav-link">About</a></li>
+          <li><a href="#featured" class="nav-link">Portfolio</a></li>
+          <li class="has-mega-menu">
+            <a href="#contact" class="nav-link">Contacts</a>
+            <div class="mega-menu" role="menu" aria-label="Services menu">
+              <div class="mega-column">
+                <h3>Studio Visits</h3>
+                <p>Private consultations for residential and hospitality commissions.</p>
+              </div>
+              <div class="mega-column">
+                <h3>Global Offices</h3>
+                <p>Connect with our teams across international design destinations.</p>
+              </div>
+              <div class="mega-column">
+                <h3>Partnerships</h3>
+                <p>Developer and collector enquiries for long-horizon collaborations.</p>
+              </div>
+            </div>
+          </li>
+          <li class="has-mega-menu">
+            <a href="#services" class="nav-link">Services</a>
+            <div class="mega-menu" role="menu" aria-label="Services menu expanded">
+              <div class="mega-column">
+                <h3>Architecture</h3>
+                <p>Contextual master planning and singular private residences.</p>
+              </div>
+              <div class="mega-column">
+                <h3>Interiors</h3>
+                <p>Luxury material systems for homes, hotels, and showpiece suites.</p>
+              </div>
+              <div class="mega-column">
+                <h3>Commercial</h3>
+                <p>Retail, leisure, and branded spaces with elevated guest experience.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul>
+          <li><a href="#hero" class="mobile-link">Home</a></li>
+          <li><a href="#highlight" class="mobile-link">About</a></li>
+          <li><a href="#featured" class="mobile-link">Portfolio</a></li>
+          <li><a href="#contact" class="mobile-link">Contacts</a></li>
+          <li><a href="#services" class="mobile-link">Services</a></li>
+          <li><a href="#recognition" class="mobile-link">Recognition</a></li>
+          <li><a href="#clients" class="mobile-link">Clients</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="hero" aria-label="Hero section">
+        <div class="hero-media" id="hero-media" aria-hidden="true">
+          <video
+            class="hero-video desktop-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=80"
+          >
+            <source
+              src="/assets/hero.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support background video playback.
+          </video>
+
+          <video
+            class="hero-video mobile-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80"
+          >
+            <source
+              src="/assets/hero.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support background video playback.
+          </video>
+
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content container reveal-section">
+          <p class="hero-kicker">DesignScope</p>
+          <h3 class="hero-title" data-split-text>
+            Leading international bureau for premium architectural and interior design
+          </h3>
+          <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+        </div>
+
+        <button class="scroll-indicator" id="scroll-indicator" aria-label="Scroll to next section">
+          <span></span>
+        </button>
+      </section>
+
+      <section class="section stats" id="stats" aria-labelledby="stats-title">
+        <div class="container">
+          <div class="stats-showcase">
+            <div class="stats-copy reveal-section">
+              <h2 class="section-title stats-title-alt" id="stats-title">
+                Completed projects in 32 countries
+              </h2>
+              <p class="stats-lead">
+                We have been showcasing projects in the distinctive DesignScope style
+                around the world <span>through one of the most extensive luxury portfolios.</span>
+              </p>
+              <a href="#featured" class="btn btn-outline-accent">Discover Portfolio</a>
+            </div>
+
+            <div class="stats-visual reveal-section" aria-hidden="true">
+              <img
+                src="planet.webp"
+                alt=""
+                loading="lazy"
+                class="stats-planet"
+              />
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card reveal-card">
+              <div class="stat-icon" aria-hidden="true"></div>
+              <p class="stat-number" data-counter="1200">0</p>
+              <p class="stat-label">average project area</p>
+            </article>
+            <article class="stat-card reveal-card">
+              <div class="stat-icon" aria-hidden="true"></div>
+              <p class="stat-number" data-counter="98">0</p>
+              <p class="stat-label">of customers recommend us</p>
+            </article>
+            <article class="stat-card reveal-card">
+              <div class="stat-icon" aria-hidden="true"></div>
+              <p class="stat-number" data-counter="2000">0</p>
+              <p class="stat-label">m2 of in-house manufacturing capability</p>
+            </article>
+            <article class="stat-card reveal-card">
+              <div class="stat-icon" aria-hidden="true"></div>
+              <p class="stat-number" data-counter="10">0</p>
+              <p class="stat-label">years of expertise in architecture and design</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured" id="featured" aria-labelledby="featured-title">
+        <div class="container">
+          <h2 class="section-title reveal-section" id="featured-title">Featured Categories</h2>
+          <div class="featured-grid">
+            <article class="feature-card reveal-card">
+              <img
+                src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1600&q=80"
+                alt="Minimal luxury architecture with large glass facade"
+                loading="lazy"
+                class="lazy-blur"
+              />
+              <div class="feature-overlay">
+                <h3>Architecture</h3>
+                <p>Contemporary forms balancing geometry and natural light.</p>
+              </div>
+            </article>
+            <article class="feature-card reveal-card">
+              <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80"
+                alt="Elegant interior lounge with warm ambient lighting"
+                loading="lazy"
+                class="lazy-blur"
+              />
+              <div class="feature-overlay">
+                <h3>Interior</h3>
+                <p>Bespoke sensory spaces curated through material storytelling.</p>
+              </div>
+            </article>
+            <article class="feature-card reveal-card">
+              <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80"
+                alt="Luxury commercial atrium with dramatic lines"
+                loading="lazy"
+                class="lazy-blur"
+              />
+              <div class="feature-overlay">
+                <h3>Commercial</h3>
+                <p>Identity-driven environments designed for lasting impressions.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <h2 class="section-title reveal-section" id="services-title">Premium Services</h2>
+          <div class="services-grid">
+            <article class="service-card reveal-card">
+              <div class="service-icon" aria-hidden="true"></div>
+              <h3>Concept Architecture</h3>
+              <p>Early-stage ideation, form-finding, and site-sensitive concept frameworks.</p>
+            </article>
+            <article class="service-card reveal-card">
+              <div class="service-icon" aria-hidden="true"></div>
+              <h3>Interior Curation</h3>
+              <p>Material palettes, furniture orchestration, and experiential detailing.</p>
+            </article>
+            <article class="service-card reveal-card">
+              <div class="service-icon" aria-hidden="true"></div>
+              <h3>Hospitality Design</h3>
+              <p>Guest-centric luxury systems for boutique hotels and signature lounges.</p>
+            </article>
+            <article class="service-card reveal-card">
+              <div class="service-icon" aria-hidden="true"></div>
+              <h3>Retail Spaces</h3>
+              <p>High-performance commercial interiors that convert presence into loyalty.</p>
+            </article>
+            <article class="service-card reveal-card">
+              <div class="service-icon" aria-hidden="true"></div>
+              <h3>Project Delivery</h3>
+              <p>Integrated coordination from technical drawings to flawless implementation.</p>
+            </article>
+            <article class="service-card reveal-card">
+              <div class="service-icon" aria-hidden="true"></div>
+              <h3>Renovation Strategy</h3>
+              <p>Modernization plans preserving the soul of existing architectural assets.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlight" id="highlight" aria-labelledby="highlight-title">
+        <div class="container split-layout">
+          <div class="highlight-copy reveal-section">
+            <p class="eyebrow">Signature Collection</p>
+            <h2 class="section-title" id="highlight-title">Designed for Legacy, Built for Emotion</h2>
+            <p>
+              Every project is conceived as a living composition where texture,
+              proportion, and light become a single narrative.
+            </p>
+            <a href="#featured" class="btn btn-ghost">View Portfolio</a>
+          </div>
+          <div class="highlight-media parallax-wrap reveal-section">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=80"
+              alt="Luxury villa poolside at twilight"
+              loading="lazy"
+              class="parallax-image lazy-blur"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section recognition" id="recognition" aria-labelledby="recognition-title">
+        <div class="recognition-bg" aria-hidden="true"></div>
+        <div class="container recognition-content">
+          <div class="reveal-section">
+            <p class="eyebrow">Recognition</p>
+            <h2 class="section-title" id="recognition-title">Awarded for Spatial Excellence</h2>
+            <p>
+              Trusted by private clients and global hospitality groups for creating
+              environments that feel both iconic and deeply personal.
+            </p>
+          </div>
+          <aside class="glass-card reveal-card" aria-label="Studio recognition highlights">
+            <p class="glass-number" data-counter="34">0</p>
+            <p>international design recognitions and jury selections</p>
+            <div class="socials">
+              <a href="#" aria-label="Visit Instagram">Instagram</a>
+              <a href="#" aria-label="Visit Behance">Behance</a>
+              <a href="#" aria-label="Visit Dribbble">Dribbble</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section clients" id="clients" aria-labelledby="clients-title">
+        <div class="container clients-card reveal-section">
+          <h2 class="clients-card-title" id="clients-title">
+            WE ARE CHOSEN BY THOSE <span class="accent-text">WHO STRIVE FOR EXCELLENCE</span> — AMONG OUR CLIENTS:
+          </h2>
+          <div class="marquee" aria-label="Client logos">
+            <div class="marquee-track" id="marquee-track">
+              <img src="/assets/clients/1.png" alt="Jacob & Co" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/2.png" alt="Engeo" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/3.png" alt="Damac" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/4.png" alt="Mandarin Oriental" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/5.png" alt="Eurostroy" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/6.png" alt="Marriott" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/7.png" alt="River Park" loading="lazy" class="client-logo" />
+              <img src="/assets/clients/8.png" alt="Astral Estates" loading="lazy" class="client-logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline" aria-labelledby="timeline-title">
+        <div class="container">
+          <h2 class="timeline-heading reveal-section" id="timeline-title">
+            LEARN MORE ABOUT <span class="accent-text">CREATING YOUR DREAM PROJECT</span> FROM YOUR PERSONAL EXPERT
+          </h2>
+          <div class="timeline-grid">
+            <article class="timeline-card reveal-card">
+              <div class="timeline-step-badge" aria-hidden="true">1</div>
+              <h3>FILL OUT THE FORM</h3>
+              <p>Provide your name and current phone number</p>
+            </article>
+            <article class="timeline-card reveal-card">
+              <div class="timeline-step-badge" aria-hidden="true">2</div>
+              <h3>WE WILL CONTACT YOU</h3>
+              <p>Our personal expert will discuss your project's requirements and introduce you to our approach</p>
+            </article>
+            <article class="timeline-card reveal-card">
+              <div class="timeline-step-badge" aria-hidden="true">3</div>
+              <h3>RECEIVE A TAILORED OFFER</h3>
+              <p>After a detailed review of your wishes, we will prepare a personalized project plan</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-image-wrap reveal-section">
+            <img
+              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80"
+              alt="Modern staircase in a premium architecture DesignScope"
+              loading="lazy"
+              class="lazy-blur"
+            />
+          </div>
+          <div class="contact-panel reveal-section">
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title" id="contact-title">Begin Your Vision</h2>
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <input id="name" name="name" type="text" required />
+                <label for="name">Full Name</label>
+                <small class="error" id="name-error"></small>
+              </div>
+              <div class="field">
+                <input id="email" name="email" type="email" required />
+                <label for="email">Email Address</label>
+                <small class="error" id="email-error"></small>
+              </div>
+              <div class="field">
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Project Brief</label>
+                <small class="error" id="message-error"></small>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-labelledby="footer-title">
+      <div class="container footer-grid">
+        <div>
+          <h2 id="footer-title" class="footer-brand">DesignScope</h2>
+          <p>Luxury architecture and interior narratives built to endure.</p>
+        </div>
+        <div>
+          <h3>DesignScope</h3>
+          <ul>
+            <li><a href="#featured">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#timeline">Process</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Licensing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <form class="newsletter" aria-label="Newsletter subscription">
+            <label for="newsletter-email" class="sr-only">Email</label>
+            <input id="newsletter-email" type="email" placeholder="Your email" />
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      <p class="copyright">2026 DesignScope. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

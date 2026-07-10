@@ -1,0 +1,200 @@
+/* Global Styles */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('../images/plumb2.jpeg') no-repeat center center/cover;
+    padding: 150px 0;
+    margin-top: -56px;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Service Section */
+.service-category h3 {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.service-category h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* Service Cards */
+.service-card {
+    text-align: left;
+    padding: 25px;
+    background: var(--light-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-card i {
+    color: var(--primary-color);
+}
+
+.service-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.service-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+.service-card ul li i {
+    font-size: 0.8rem;
+}
+
+/* Review Cards */
+.review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    width: 20px;
+}
+
+.map-container {
+    height: 300px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about-image {
+    height: 400px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Gallery Section */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 86, 179, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h4 {
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.gallery-overlay p {
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.gallery-item:hover .gallery-overlay h4,
+.gallery-item:hover .gallery-overlay p {
+    transform: translateY(0);
+}
+
+.ratio-4x3 {
+    aspect-ratio: 4/3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+    
+    .service-card {
+        margin-bottom: 20px;
+    }
+    
+    .about-image {
+        height: 300px;
+        margin-top: 30px;
+    }
+}
