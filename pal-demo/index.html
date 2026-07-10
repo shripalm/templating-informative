@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PAL by Rahul Jagani - Award-Winning Wedding, Portrait, and Celebrity Photographer & Cinematographer based in Surat, Gujarat. Stills, Shades, Stories.">
+    <title>PAL by Rahul Jagani | Award-Winning Stills, Shades, Stories</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@200;300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-main">पल</span>
+                <span class="logo-sub">BY RAHUL JAGANI</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#editorial-stories" class="nav-link">Stories</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="#contact" class="btn-nav">Inquire</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <ul class="mobile-menu">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#gallery" class="mobile-link">Portfolio</a></li>
+            <li><a href="#editorial-stories" class="mobile-link">Stories</a></li>
+            <li><a href="#faq" class="mobile-link">FAQ</a></li>
+            <li><a href="#contact" class="mobile-link btn-mobile-inquire">Inquire Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section with Split Screen Layout for Vertical Slides -->
+    <section class="hero-section" id="home">
+        <div class="hero-split-container">
+            <!-- Left: Text content and Indicators -->
+            <div class="hero-text-col">
+                <div class="hero-text-content-wrapper">
+                    <!-- Slide Texts (Dynamically activated by CSS class) -->
+                    <div class="hero-text-item active" data-index="0">
+                        <span class="hero-subtitle">Award-Winning Photography</span>
+                        <h1 class="hero-title">Stills. Shades. Stories.</h1>
+                        <p class="hero-description">Winner of prestigious award series on all major wedding platforms, archiving unrepeatable moments.</p>
+                    </div>
+                    <div class="hero-text-item" data-index="1">
+                        <span class="hero-subtitle">Celebrity & High Profile</span>
+                        <h1 class="hero-title">The Da-Bangg Tour & Icons</h1>
+                        <p class="hero-description">Documenting major global concert stages, celebrity portfolios, and high-profile wedding events.</p>
+                    </div>
+                    <div class="hero-text-item" data-index="2">
+                        <span class="hero-subtitle">Surat Studio Base</span>
+                        <h1 class="hero-title">Artisan Storytelling</h1>
+                        <p class="hero-description">Based out of Parle Point, Surat, creating eye-soothing, timeless wedding frames worldwide.</p>
+                    </div>
+                    <div class="hero-text-item" data-index="3">
+                        <span class="hero-subtitle">Fine Art Details</span>
+                        <h1 class="hero-title">Documentary Elegance</h1>
+                        <p class="hero-description">Capturing raw glances, shadows, and the silent, authentic connections between lovers.</p>
+                    </div>
+
+                    <div class="hero-cta-box">
+                        <a href="#gallery" class="btn-primary">Explore Portfolio</a>
+                    </div>
+                </div>
+
+                <!-- Slider Controls at bottom left -->
+                <div class="hero-controls-wrapper">
+                    <div class="slider-indicators" id="slider-indicators">
+                        <span class="indicator active" data-index="0"></span>
+                        <span class="indicator" data-index="1"></span>
+                        <span class="indicator" data-index="2"></span>
+                        <span class="indicator" data-index="3"></span>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-btn prev-btn" id="prev-slide" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="slider-btn next-btn" id="next-slide" aria-label="Next slide"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: 4:5 Vertical Slide Frame -->
+            <div class="hero-media-col">
+                <div class="hero-frame-wrapper">
+                    <div class="hero-slider" id="hero-slider">
+                        <!-- Slide 1 -->
+                        <div class="hero-slide active">
+                            <div class="hero-image" style="background-image: url('images/elle.jpg');"></div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="hero-slide">
+                            <div class="hero-image" style="background-image: url('images/unscripted.jpg');"></div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="hero-slide">
+                            <div class="hero-image" style="background-image: url('images/scenary.jpg');"></div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="hero-slide">
+                            <div class="hero-image" style="background-image: url('images/a hug.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-down">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Photo Quote Break Section -->
+    <section class="quote-section section-padding">
+        <div class="container">
+            <div class="quote-grid-card fade-in-element">
+                <div class="quote-image-box">
+                    <img src="images/quote.jpg" alt="Editorial quote overlay: holding hands details" loading="lazy">
+                </div>
+                <div class="quote-text-box">
+                    <span class="quote-tag">Core Philosophy</span>
+                    <h3 class="quote-display-title">"To capture a moment is to capture how it felt, not just how it looked."</h3>
+                    <p class="quote-author">— PAL by Rahul Jagani</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Text Content -->
+                <div class="about-text-container fade-in-element">
+                    <span class="section-subtitle">The Artist</span>
+                    <h2 class="section-title">PAL by Rahul Jagani</h2>
+                    <p class="about-lead">A premier wedding and fine art photography studio based in Surat, Gujarat, guided by veteran artist Rahul Jagani.</p>
+                    <p class="about-body">For over two decades, Rahul Jagani has been capturing the delicate highlights of life: stills, shades, and stories. The studio's work blends the clean layouts of high-fashion editorials with the emotional truth of documentary photography, resulting in eye-soothing, evergreen visual art.</p>
+                    <p class="about-body">As an artist recognized on major national platforms, Rahul has shot celebrity tours and events (including the Salman Khan Da-Bangg Tour and concerts with Shaan and the late KK) and has won awards on all major platforms, including the WeddingSutra Awards, GIWA (Great Indian Wedding Awards - ICWF), and EMF Global Awards.</p>
+                    
+                    <!-- Awards Badges Grid -->
+                    <div class="awards-badge-grid">
+                        <div class="badge-item">
+                            <span class="badge-icon"><i class="fa-solid fa-trophy"></i></span>
+                            <span class="badge-name">WeddingSutra Awards</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon"><i class="fa-solid fa-award"></i></span>
+                            <span class="badge-name">GIWA - ICWF Winner</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon"><i class="fa-solid fa-star"></i></span>
+                            <span class="badge-name">EMF Global Awards</span>
+                        </div>
+                    </div>
+
+                    <div class="about-signature">
+                        <div class="sig-name">Rahul Jagani</div>
+                        <div class="sig-title">Stills • Shades • Stories</div>
+                    </div>
+                </div>
+
+                <!-- Images Collage -->
+                <div class="about-image-container fade-in-element">
+                    <div class="image-collage">
+                        <div class="collage-item main-img">
+                            <img src="images/vibe tribe.jpg" alt="Outdoor couple laughing candidly" loading="lazy">
+                        </div>
+                        <div class="collage-item secondary-img">
+                            <img src="images/cafe rave.jpg" alt="Candid cafe aesthetic" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section-padding" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Our Expertise</span>
+                <h2 class="section-title">Tailored Visual Collections</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card fade-in-element">
+                    <div class="service-img-wrapper">
+                        <img src="images/the cake.jpg" alt="Wedding stories detailing cake" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Wedding Stories</h3>
+                        <p class="service-desc">Complete multi-day editorial coverage, custom fine-art albums, and award-winning cinematic highlight films that preserve every raw emotion and ceremony detail.</p>
+                        <span class="service-action">Inquire <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card fade-in-element" style="animation-delay: 0.1s;">
+                    <div class="service-img-wrapper">
+                        <img src="images/elle.jpg" alt="Fine art portrait editorial" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Fine Art Portraits</h3>
+                        <p class="service-desc">Intimate solo sessions, couple storyboarding, editorial modeling headshots, and styling consultations designed around natural aesthetics.</p>
+                        <span class="service-action">Inquire <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card fade-in-element" style="animation-delay: 0.2s;">
+                    <div class="service-img-wrapper">
+                        <img src="images/without a plan.jpg" alt="Adventure travel visual" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Adventure Travel</h3>
+                        <p class="service-desc">Pre-wedding couples and visual storytelling sessions in breathtaking, remote locations. Hills, beaches, and international elopements.</p>
+                        <span class="service-action">Inquire <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card fade-in-element" style="animation-delay: 0.3s;">
+                    <div class="service-img-wrapper">
+                        <img src="images/cafe rave.jpg" alt="Commercial lifestyle visual" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Commercial & Celebrity</h3>
+                        <p class="service-desc">High-profile tours (Da-Bangg Tour), brand lookbooks, artist lifestyle captures, and cinematic brand video productions tailored for premium exposure.</p>
+                        <span class="service-action">Inquire <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section (Mixed Media with 4:5 Instagram Ratios) -->
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Visual Portfolio</span>
+                <h2 class="section-title">The Archive of Curated Light</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="gallery-filters fade-in-element">
+                <button class="filter-tab active" data-filter="all">All Stories</button>
+                <button class="filter-tab" data-filter="portraits">Portraits</button>
+                <button class="filter-tab" data-filter="stories">Stories</button>
+                <button class="filter-tab" data-filter="films">Films</button>
+            </div>
+
+            <!-- Gallery Grid with 4:5 vertical item blocks -->
+            <div class="gallery-grid fade-in-element">
+                <!-- Gallery Item 1 (Image) -->
+                <div class="gallery-item item-portraits" data-src="images/elle.jpg" data-type="image" data-category="Portraits" data-title="Grace & Contours">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/elle.jpg" alt="Elegant portrait photography" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="item-cat">Portraits</span>
+                            <h4 class="item-title">Grace & Contours</h4>
+                            <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 (Mixed Media Video & Image) -->
+                <div class="gallery-item item-films" data-src="images/nothin.mp4" data-type="video" data-poster="images/nothin.jpg" data-category="Films" data-title="Nothin' Else Matters">
+                    <div class="gallery-img-wrapper">
+                        <!-- Shows image poster initially, on hover plays inline video (handled by JS/CSS) -->
+                        <img src="images/nothin.jpg" alt="Marine Drive couple frame" class="gallery-poster-img" loading="lazy">
+                        <video src="images/nothin.mp4" class="gallery-hover-video" muted loop playsinline></video>
+                        <span class="media-badge-icon"><i class="fa-solid fa-play"></i></span>
+                        <div class="gallery-item-info">
+                            <span class="item-cat">Films / Stories</span>
+                            <h4 class="item-title">Nothin' Else Matters</h4>
+                            <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 (Image) -->
+                <div class="gallery-item item-stories" data-src="images/a hug.jpg" data-type="image" data-category="Stories" data-title="The Softness of a Hug">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/a hug.jpg" alt="Intimate embrace photography" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="item-cat">Stories</span>
+                            <h4 class="item-title">The Softness of a Hug</h4>
+                            <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 (Image) -->
+                <div class="gallery-item item-stories" data-src="images/without a plan.jpg" data-type="image" data-category="Stories" data-title="Into the Deep Green">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/without a plan.jpg" alt="Deep green forest photography" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="item-cat">Stories</span>
+                            <h4 class="item-title">Into the Deep Green</h4>
+                            <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 (Image) -->
+                <div class="gallery-item item-stories" data-src="images/the cake.jpg" data-type="image" data-category="Stories" data-title="Delicate Ceremonial Crust">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/the cake.jpg" alt="Wedding cake detail photography" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="item-cat">Stories</span>
+                            <h4 class="item-title">Delicate Ceremonial Crust</h4>
+                            <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 (Image) -->
+                <div class="gallery-item item-portraits" data-src="images/mashup.jpg" data-type="image" data-category="Portraits" data-title="A Mashup of Shadows">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/mashup.jpg" alt="Portrait lighting mashup" loading="lazy">
+                        <div class="gallery-item-info">
+                            <span class="item-cat">Portraits</span>
+                            <h4 class="item-title">A Mashup of Shadows</h4>
+                            <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Stories Break (Featuring Goa fire dancers quote2.jpg) -->
+    <section class="editorial-story-section section-padding" id="editorial-stories">
+        <div class="container">
+            <div class="editorial-split-card fade-in-element">
+                <div class="editorial-text-col">
+                    <span class="section-subtitle">Sundowner Log</span>
+                    <h2 class="section-title">The Night That Didn't Sleep</h2>
+                    <p class="story-desc">It wasn't just one evening. It was three days of sundowners in Goa—where afternoons melted into sunsets, and nights slowly learned how to glow.</p>
+                    <p class="story-detail">We followed the rhythm of the fire, capturing the raw heat and dynamic glows as dancers painted shapes against the pitch black beach. An archive of celebrations that warm the soul.</p>
+                    <a href="#contact" class="btn-primary">Book Event Coverage</a>
+                </div>
+                <div class="editorial-image-col">
+                    <div class="story-img-wrapper">
+                        <img src="images/quote2.jpg" alt="Goa fire dancers performance text card" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonial-section section-padding">
+        <div class="container">
+            <div class="testimonial-container fade-in-element">
+                <div class="testimonial-grid">
+                    <!-- Left: Profile image slot -->
+                    <div class="testi-image-col">
+                        <div class="testi-img-wrapper">
+                            <!-- Image changes dynamically based on active testimonial -->
+                            <img src="images/client1.jpg" alt="Testimonial client profile" id="testi-profile-img" loading="lazy">
+                            <span class="testi-quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+                        </div>
+                    </div>
+                    <!-- Right: Review Text -->
+                    <div class="testi-content-col">
+                        <span class="section-subtitle">Kind Words</span>
+                        <h2 class="section-title">Client Love Stories</h2>
+                        
+                        <div class="testimonial-slider-wrapper">
+                            <!-- Testimonial Item 1 -->
+                            <div class="testi-item active" data-img="images/client1.jpg">
+                                <p class="testi-text">"Working with Rahul Jagani was absolute magic. He captures the raw, quiet glances that you think nobody notices. The award-winning frames and clean, eye-soothing layout look breathtaking in our fine art wedding album!"</p>
+                                <div class="testi-author">
+                                    <h4 class="author-name">Meera & Amit</h4>
+                                    <span class="author-location">Udaipur Wedding Stories</span>
+                                </div>
+                            </div>
+                            <!-- Testimonial Item 2 -->
+                            <div class="testi-item" data-img="images/client-2.jpg">
+                                <p class="testi-text">"The fine art portraits and concert coverages are visual poetry. Rahul plays with light and shadows in a way that is truly evergreen. Highly professional, and recognized for a reason!"</p>
+                                <div class="testi-author">
+                                    <h4 class="author-name">Sara & Kabir</h4>
+                                    <span class="author-location">Editorial Portrait Shoot</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Controls -->
+                        <div class="testi-controls">
+                            <button class="testi-btn" id="prev-testi" aria-label="Previous Testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+                            <div class="testi-dots" id="testi-dots">
+                                <span class="testi-dot active" data-index="0"></span>
+                                <span class="testi-dot" data-index="1"></span>
+                            </div>
+                            <button class="testi-btn" id="next-testi" aria-label="Next Testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding" id="faq">
+        <div class="container">
+            <div class="faq-grid">
+                <!-- FAQ Accordion Left -->
+                <div class="faq-accordion-col fade-in-element">
+                    <span class="section-subtitle">Common Queries</span>
+                    <h2 class="section-title">Answering Your Questions</h2>
+                    <p class="faq-intro">Here are a few answers to general inquiries about timelines, destinations, styling, and how we coordinate booking details.</p>
+                    
+                    <div class="accordion-container">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                <span>What is your photography style?</span>
+                                <i class="fa-solid fa-plus icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Our style is a curated blend of fine-art editorial and organic storytelling—stills, shades, and stories. We prioritize soft, natural light, warm beige/ivory tone palettes, and focus on capturing candid expressions rather than highly posed standard frames.</p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                <span>Do you travel for destination events?</span>
+                                <i class="fa-solid fa-plus icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes, absolutely. We love shooting in unfamiliar territories. We regularly shoot in Surat, Udaipur, Goa, Mumbai, and are available for international celebrity bookings. Travel and accommodation fees are calculated based on the location details.</p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                <span>How long does the gallery delivery take?</span>
+                                <i class="fa-solid fa-plus icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>We send a sneak-peek gallery of 15-20 images within 7 days of the shoot. The complete edited high-resolution digital archive is typically delivered via a private link within 4 to 6 weeks, depending on the project scope.</p>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                <span>Can we customize our photography packages?</span>
+                                <i class="fa-solid fa-plus icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes. Every individual and couple has a unique narrative. During our onboarding call, we go over booking structures and curate custom-tailored deliverables, hourly schedules, and album configurations to suit you perfectly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Side Image Right -->
+                <div class="faq-image-col fade-in-element">
+                    <div class="faq-img-wrapper">
+                        <img src="images/without a plan.jpg" alt="Deep green pine forest" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry / Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="contact-bg-wrapper" style="background-image: url('images/scenary.jpg');">
+            <div class="contact-overlay"></div>
+            <div class="container contact-container">
+                <div class="contact-grid">
+                    <!-- Contact Details Left -->
+                    <div class="contact-info-col fade-in-element">
+                        <span class="section-subtitle light-subtitle">Get In Touch</span>
+                        <h2 class="section-title light-title">Let's Frame Your Story Together</h2>
+                        <p class="contact-desc">We take on a limited number of weddings and high-profile events each season to ensure our clients receive a premium, personalized experience. Drop us a message detailing your date, venue, and design aspirations.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div class="info-details">
+                                    <span class="info-label">Write to Us</span>
+                                    <a href="mailto:hello@palbyrahuljagani.com" class="info-link">hello@palbyrahuljagani.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="info-details">
+                                    <span class="info-label">Call / WhatsApp</span>
+                                    <a href="tel:+919898989898" class="info-link">+91 98989 89898</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <div class="info-details">
+                                    <span class="info-label">Main Studio</span>
+                                    <span class="info-val">Parle Point, Surat, Gujarat, India (Available Worldwide)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Right -->
+                    <div class="contact-form-col fade-in-element">
+                        <div class="form-wrapper">
+                            <h3 class="form-header">Booking Inquiry</h3>
+                            <form id="inquiry-form" novalidate>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Full Name *</label>
+                                        <input type="text" id="form-name" required placeholder="E.g., Devika Nair">
+                                        <span class="error-msg">Please enter your name</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Email Address *</label>
+                                        <input type="email" id="form-email" required placeholder="E.g., devika@gmail.com">
+                                        <span class="error-msg">Please enter a valid email</span>
+                                    </div>
+                                </div>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="form-service">Select Service *</label>
+                                        <select id="form-service" required>
+                                            <option value="" disabled selected>Choose a service</option>
+                                            <option value="wedding">Wedding Stories</option>
+                                            <option value="portrait">Fine Art Portraits</option>
+                                            <option value="adventure">Adventure Travel Shoot</option>
+                                            <option value="commercial">Commercial & Celebrity</option>
+                                        </select>
+                                        <span class="error-msg">Please choose a service</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-date">Event Date</label>
+                                        <input type="date" id="form-date">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-message">Tell Us Your Vision *</label>
+                                    <textarea id="form-message" required rows="4" placeholder="Detail your date, timeline, theme, and location..."></textarea>
+                                    <span class="error-msg">Please write a small detail about your project</span>
+                                </div>
+                                <button type="submit" class="btn-submit" id="btn-submit">
+                                    <span class="btn-text">Submit Inquiry</span>
+                                    <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                                </button>
+                                <div id="form-feedback" class="form-feedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col branding-col">
+                    <h3 class="footer-logo"> पल <span class="footer-logo-sub">BY RAHUL JAGANI</span></h3>
+                    <p class="footer-tagline">Award-winning fine art, wedding, and celebrity cinematography. Stills, Shades, Stories since 2004.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h4 class="footer-heading">Studio Base</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col links-col">
+                    <h4 class="footer-heading">Stories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#editorial-stories">Stories</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#contact">Inquire</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social-col">
+                    <h4 class="footer-heading">Follow The Journey</h4>
+                    <p class="social-desc">Follow our recent updates, portfolio snippets, and highlights on Instagram: <strong>@pal_by_rahuljagani</strong></p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/pal_by_rahuljagani" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 PAL by Rahul Jagani. All Rights Reserved.</p>
+                <p class="credit">Crafted with care for Photographers & Dreamers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Mixed-Media Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Media Lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox"><i class="fa-solid fa-xmark"></i></button>
+        
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Media"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Media"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <div class="lightbox-content" id="lightbox-content-box">
+            <!-- Dynamic elements: img or video will be injected here by app.js -->
+            <div class="lightbox-caption">
+                <span class="caption-cat" id="lightbox-cat">Category</span>
+                <h3 class="caption-title" id="lightbox-title">Title</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JS Bundle -->
+    <script src="app.js"></script>
+</body>
+</html>
